@@ -1,0 +1,97 @@
+.parte-3 {
+  width: 100%;
+  background: rgb(204, 226, 247);
+  padding-bottom: 10em;
+  padding-top: 2em;
+
+}
+
+.info-perfil {
+  margin-top: 2em;
+}
+
+.desafio-titulo {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 1em;
+  font-size: 3rem;
+}
+
+.modal {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+}
+
+.perfil{
+  margin-left: 4em;
+}
+
+.perfil h1 a {
+  margin-left: 3.5em;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+
+.perfil h1 a:hover {
+  color: rgba(23, 240, 41, 0.836);
+}
+
+.modal .perfil img {
+  width: 200px;
+  height: 200px;
+  margin-left: 3em;
+  margin-top: 2em;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.buttons {
+  left: 100%;
+  bottom: 5em;
+  position: relative;
+}
+
+.buttons .repositorios {
+  margin-bottom: 10px;
+  margin-right: 2em;
+  text-decoration: none;
+  color: rgba(23, 240, 41, 0.836);
+  text-transform: uppercase;
+  border: 3px solid rgba(23, 240, 41, 0.836);
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttons .favoritos {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(23, 240, 41, 0.836);
+  text-transform: uppercase;
+  background: none;
+  border: 3px solid rgba(23, 240, 41, 0.836);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-bottom: 1.2em;
+}
+
+.buttons .favoritos:hover {
+  background: rgba(23, 240, 41, 0.836);
+  color: #fff;
+}
+
+.buttons .repositorios:hover {
+  background: rgba(23, 240, 41, 0.836);
+  color: #fff;
+}

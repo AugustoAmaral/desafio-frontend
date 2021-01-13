@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.2s;
+}
+
+.parte-1 {
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+}
+
+.wallpaper {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.5;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.wallpaper-img {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 120vh;
+  z-index: -2;
+}
+
+/* 
+
+
+
+
+
+ */
+
+header a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.747);
+  font-family: "Roboto";
+  /* font-size: calc(16px + 5 * ((100vw - 320px) / 700)); */
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #fff;
+}
+
+.esquerda {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+}
+
+.name {
+  margin: 0px;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.direita {
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  margin-right: 2em;
+}
+
+.direita h2 {
+  margin-left: 2em;
+  margin: 0px;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.mid-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 
+
+
+
+
+
+
+ */
+
+.mid-page h1 {
+  margin: 0px;
+  text-align: left;
+  font-size: calc(16px + 28 * ((100vw - 320px) / 680));
+  justify-content: center;
+  text-rendering: geometricPrecision;
+  font-weight: 700;
+}
+
+.subtitulo {
+  margin: 0px;
+  font-weight: 400;
+  color: rgb(175, 175, 175);
+}
+
+.subtitulo a {
+  color: rgb(175, 175, 175);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.subtitulo a:hover {
+  color: #fff;
+}
+
+.social-links {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.social-links img {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+  filter: invert(0.6);
+}
+
+.social-links img:hover {
+  transform: translateY(-10px);
+  filter: opacity(1) invert(1);
+}
+/* 
+
+
+
+
+
+ */
+
+footer {
+  background: rgb(31, 25, 25);
+  color: #fff;
+  width: 100%;
+  padding-top: 2em;
+  margin: 0px;
+  padding-bottom: 2em;
+}
+
+footer h1 {
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  font-size: 1rem;
+  color: rgb(175, 175, 175);
+}
+
+footer h1 a {
+  transition: 0.2s;
+  text-decoration: none;
+  color: rgb(175, 175, 175);
+}
+
+footer h1 a:hover {
+  color: #fff;
+}

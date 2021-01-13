@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desafio Font</title>
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/sobre.css" />
+    <link rel="stylesheet" href="./css/desafio.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body id="root">
+    <section class="parte-1">
+      <header>
+        <div class="esquerda">
+          <h1 class="name"><a href="/">Augusto Amaral</a></h1>
+        </div>
+        <div class="direita">
+          <h2 class="home"><a href="#home">Home</a></h2>
+          <h2 class="sobre"><a href="#sobre">Sobre</a></h2>
+          <h2 class="desafio"><a href="#desafio">Desafio</a></h2>
+        </div>
+      </header>
+
+      <div class="mid-page">
+        <h1 class="titulo">Desenvolvedor Front End</h1>
+        <h2 class="subtitulo">
+          Desafio
+          <a target="blank" href="http://www.qconcursos.com">Qconcursos.com</a>
+        </h2>
+      </div>
+
+      <div class="social-links">
+        <a target="blank" href="https://www.facebook.com/gutym.amaral">
+          <img src="./img/facebook.png" />
+        </a>
+
+        <a target="blank" href="https://www.linkedin.com/in/auamaral/">
+          <img src="./img/linkedin.png" />
+        </a>
+
+        <a target="blank" href="https://github.com/AugustoAmaral">
+          <img src="./img/github.png" />
+        </a>
+      </div>
+
+      <div class="wallpaper"></div>
+      <img src="./img/wallpaper01.jpg" class="wallpaper-img" />
+    </section>
+
+    <section class="parte-2" id="sobre">
+      <h1 class="sobre-titulo">Sobre</h1>
+      <div class="sobre-texto">
+        <p>
+          Escrever um pequeno texto sobre você <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sed metus vel lectus facilisis vestibulum a eget eros. Pellentesque
+          aliquet accumsan elit, ut ullamcorper leo aliquam nec. Vestibulum
+          scelerisque gravida mi vel eleifend. Proin imperdiet orci non nisl
+          lobortis, non facilisis urna vestibulum. Sed fermentum metus laoreet
+          feugiat dignissim. Ut non vestibulum nisi, et commodo metus.
+          Vestibulum blandit fringilla faucibus. Nunc blandit metus ut semper
+          sodales. Cras sit amet laoreet dolor, non efficitur odio. In eros
+          ligula, feugiat in ligula nec, consequat pellentesque magna. Nulla
+          vitae dolor tempor, ultricies velit eget, dignissim tellus. Integer
+          vitae risus eget sapien sodales facilisis in nec mauris. Pellentesque
+          gravida sodales eros vitae molestie. Nullam nec velit ultricies,
+          sagittis est vitae, sollicitudin lacus. feugiat dignissim. Ut non
+          vestibulum nisi, et commodo metus. Vestibulum blandit fringilla
+          faucibus. Nunc blandit metus ut semper sodales. Cras sit amet laoreet
+          dolor, non efficitur odio. In eros ligula, feugiat in ligula nec,
+          consequat pellentesque magna. Nulla vitae dolor tempor, ultricies
+          velit eget, dignissim tellus. Integer vitae risus eget sapien sodales
+          facilisis in nec mauris.
+        </p>
+      </div>
+    </section>
+
+    <section class="parte-3" id="desafio">
+      <h1 class="desafio-titulo">Desafio</h1>
+
+      <div class="modal">
+        <div class="perfil">
+          <img
+            src="https://avatars3.githubusercontent.com/u/15980785?s=460&u=75315be7bf099f16c338492be9d96e1e2c4abd0b&v=4"
+          />
+          <h1 perfil-texto>
+            <a target="blank" href="https://github.com/AugustoAmaral"
+              >Visitar perfil</a
+            >
+          </h1>
+        </div>
+
+        <div class="info-perfil">
+          <h1 id="repositoriosCount">Carregando...</h1>
+          <h1>Seguidores: 100</h1>
+          <h1>Seguindo: 100</h1>
+        </div>
+
+        <div class="buttons">
+          <button class="favoritos">Ver favoritos</button>
+          <br />
+          <a class="repositorios" href="#abrirModal">Ver Repositórios</a>
+
+          <div id="abrirModal" class="modalDialog">
+            <div>
+              <a href="#fecharModal" title="Fechar" class="fecharModal">X</a>
+              <h2>Caixa de modal</h2>
+              <p>Modal simples</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque sed metus vel lectus facilisis vestibulum a eget
+                eros. Pellentesque aliquet accumsan elit, ut ullamcorper leo
+                aliquam nec.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1 class="final">
+        Desafio Desenvolvedor Front
+        <a target="blank" href="http://www.qconcursos.com">Qconcursos.com</a>
+      </h1>
+    </footer>
+  </body>
+</html>

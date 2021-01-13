@@ -1,0 +1,148 @@
+@media only screen and (max-width: 760px) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  .social-links {
+    display: flex;
+  }
+  .mid-page .titulo {
+    font-size: 3rem;
+  }
+  .subtitulo {
+    text-align: left;
+  }
+
+  header {
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+  }
+
+  .esquerda {
+    margin: 0px;
+    position: relative;
+  }
+
+  .esquerda a {
+    font-size: 2rem;
+  }
+
+  .esquerda h1 {
+    position: relative;
+  }
+
+  .esquerda .name {
+    margin: 0px;
+  }
+
+  .direita {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    display: inline-flex;
+  }
+
+  .direita h2 {
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .direita h2 home {
+    margin: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .direita a {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .sobre-texto {
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
+
+  .wallpaper-img {
+    position: absolute;
+  }
+
+  .modal {
+    display: block;
+    height: 100%+10px;
+    padding-bottom: 10px;
+  }
+
+  .perfil {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .modal .perfil img {
+    margin: 0px;
+    margin-left: 0px;
+  }
+
+  .perfil-texto h1 {
+    margin: 0px;
+  }
+
+  .perfil h1 a {
+    margin-left: 0px;
+  }
+
+  .info-perfil h1 {
+    font-size: 0.999rem;
+  }
+
+  .info-perfil {
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .buttons {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .buttons .favoritos {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .buttons .repositorios {
+    font-size: 1rem;
+  }
+
+  /* 
+
+
+  Modal
+
+
+
+   */
+
+  .modalDialog > div {
+    width: 50vw;
+    height: 70%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+  }
+}
