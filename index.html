@@ -8,6 +8,62 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      var loaded = false;
+      const getRepoCount = () =>
+        fetch("https://api.github.com/users/AugustoAmaral/repos", {
+          headers: { Accept: "application/vnd.github.v3+json" },
+        })
+          .then((r) => r.json())
+          .then(
+            (r) =>
+              (document.getElementById(
+                "reposCount"
+              ).innerHTML = `Repositórios: ${r.length}`)
+          );
+      const getFollowersCount = () =>
+        fetch("https://api.github.com/users/AugustoAmaral/followers", {
+          headers: { Accept: "application/vnd.github.v3+json" },
+        })
+          .then((r) => r.json())
+          .then(
+            (r) =>
+              (document.getElementById(
+                "followersCount"
+              ).innerHTML = `Seguidores: ${r.length}`)
+          );
+      const getFollowingCount = () =>
+        fetch("https://api.github.com/users/AugustoAmaral/following", {
+          headers: { Accept: "application/vnd.github.v3+json" },
+        })
+          .then((r) => r.json())
+          .then(
+            (r) =>
+              (document.getElementById(
+                "followingCount"
+              ).innerHTML = `Seguindo: ${r.length}`)
+          );
+
+      window.addEventListener(
+        "load",
+        (event) => {
+          createObserver();
+        },
+        false
+      );
+
+      function createObserver() {
+        observer = new IntersectionObserver((a, b) => {
+          if (a[0].isIntersecting && !loaded) {
+            loaded = true;
+            getRepoCount();
+            getFollowersCount();
+            getFollowingCount();
+          }
+        });
+        observer.observe(document.getElementById("reposCount"));
+      }
+    </script>
     <title>Desafio Font</title>
     <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -98,9 +154,9 @@
         </div>
 
         <div class="info-perfil">
-          <h1 id="repositoriosCount">Carregando...</h1>
-          <h1>Seguidores: 100</h1>
-          <h1>Seguindo: 100</h1>
+          <h1 id="reposCount">Carregando...</h1>
+          <h1 id="followersCount">Carregando...</h1>
+          <h1 id="followingCount">Carregando...</h1>
         </div>
 
         <div class="buttons">
