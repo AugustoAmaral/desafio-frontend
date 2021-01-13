@@ -65,7 +65,6 @@
       }
     </script>
     <title>Desafio Font</title>
-    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/sobre.css" />
     <link rel="stylesheet" href="./css/desafio.css" />
@@ -160,23 +159,18 @@
         </div>
 
         <div class="buttons">
-          <button class="favoritos">Ver favoritos</button>
+          <a
+            class="favoritos"
+            href="https://github.com/AugustoAmaral?tab=stars"
+          >
+            Ver favoritos
+          </a>
+          <a
+            class="favoritos"
+            href="https://github.com/AugustoAmaral?tab=repositories"
+            >Ver Repositórios
+          </a>
           <br />
-          <a class="repositorios" href="#abrirModal">Ver Repositórios</a>
-
-          <div id="abrirModal" class="modalDialog">
-            <div>
-              <a href="#fecharModal" title="Fechar" class="fecharModal">X</a>
-              <h2>Caixa de modal</h2>
-              <p>Modal simples</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque sed metus vel lectus facilisis vestibulum a eget
-                eros. Pellentesque aliquet accumsan elit, ut ullamcorper leo
-                aliquam nec.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
